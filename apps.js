@@ -2,7 +2,6 @@ const playGame = (opt) => {
     const imgList = ['rockhand.png','paperhand.png','scissorsHand.png'];
     const optArry = ['rock','paper','scissors'];
     let computerChoice = Math.floor(Math.random() * 3);
-
     // Image selected by player 
     switch (opt) {
         case 'rock':
@@ -17,7 +16,6 @@ const playGame = (opt) => {
         default:
            break;    
     }
-
     // Image selected by computer
     switch (optArry[computerChoice]) {
         case 'rock':
@@ -32,7 +30,6 @@ const playGame = (opt) => {
         default:
            break;    
     }
-
     // Display the result
     switch (opt) {  
         case 'rock':
