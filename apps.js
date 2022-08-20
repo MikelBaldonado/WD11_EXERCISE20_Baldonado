@@ -6,13 +6,13 @@ const playGame = (opt) => {
     // Image selected by player 
     switch (opt) {
         case 'rock':
-            document.getElementById('player').innerHTML = `<img src= ./image/${imgList[0]} alt="rock">`;
+            document.getElementById('player').innerHTML = `<img src= image/${imgList[0]} alt="rock">`;
             break;
         case 'paper':
-            document.getElementById('player').innerHTML = `<img src= ./image/${imgList[1]} alt="paper">`;
+            document.getElementById('player').innerHTML = `<img src= image/${imgList[1]} alt="paper">`;
             break;
         case 'scissors':
-            document.getElementById('player').innerHTML = `<img src= ./image/${imgList[2]} alt="scissors">`;
+            document.getElementById('player').innerHTML = `<img src= image/${imgList[2]} alt="scissors">`;
             break;
         default:
            break;    
@@ -21,13 +21,13 @@ const playGame = (opt) => {
     // Image selected by computer
     switch (optArry[computerChoice]) {
         case 'rock':
-            document.getElementById('computer').innerHTML = `<img src= ./image/${imgList[0]} alt="rock">`;
+            document.getElementById('computer').innerHTML = `<img src= image/${imgList[0]} alt="rock">`;
             break;
         case 'paper':
-            document.getElementById('computer').innerHTML = `<img src= ./image/${imgList[1]} alt="paper">`;
+            document.getElementById('computer').innerHTML = `<img src= image/${imgList[1]} alt="paper">`;
             break;
         case 'scissors':
-            document.getElementById('computer').innerHTML = `<img src= ./image/${imgList[2]} alt="scissors">`;
+            document.getElementById('computer').innerHTML = `<img src= image/${imgList[2]} alt="scissors">`;
             break;
         default:
            break;    
