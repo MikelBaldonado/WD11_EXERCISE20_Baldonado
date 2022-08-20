@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: sans-serif;
+}
+
+img {
+  width: 120px;
+  height: 80px;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(30, 31, 148, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Title of the game */
+.title {
+  position: absolute;
+  top: 0;
+  font-size: 4rem;
+  z-index: 2;
+}
+
+/* Score Board */
+.pick {
+  display: flex;
+  width: 30vw;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+}
+
+/* Score  */
+.playerPickBox,
+.computerPickBox {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* displaying three buttons in one line */
+.options {
+  display: flex;
+  width: 40vw;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+/* Styling on all three buttons */
+.rock,
+.paper,
+.scissors {
+  display: flex;
+  padding: 0.8rem;
+  width: 120px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  background-color: white;
+}
+
+.reset {
+  width: 120px;
+  height: 40px;
+  margin-top: 2rem;
+}
+
+.pickLabel {
+  font-size: 1rem;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: yellow;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 612px) {
+  .title {
+    text-align: center;
+  }
+  .pick {
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+  }
+  .options {
+    width: 100vw;
+  }
+}
