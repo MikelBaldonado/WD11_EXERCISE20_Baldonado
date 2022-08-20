@@ -1,5 +1,5 @@
 const playGame = (opt) => {
-    const imgList = ['rockhand.png','paperhand.png','scissorsHand.png'];
+    const imgList = ['rockHand.png','paperHand.png','scissorsHand.png'];
     const optArry = ['rock','paper','scissors'];
     let computerChoice = Math.floor(Math.random() * 3);
     // Image selected by player 
